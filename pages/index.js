@@ -78,10 +78,23 @@ export default function Home() {
               </a>
              </Link>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+          </div>
+
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96" style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <div style={{
+              position: 'relative',
+              width: '100%',
+              height: '100%',
+              display: 'flex',
+            }}>
+              <Image src={deved} layout="fill" objectFit="cover" className="max-w-full max-h-full" />
             </div>
           </div>
+
         </section>
         <section>
           <div>
