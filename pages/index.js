@@ -20,7 +20,7 @@ import web6 from "../public/web6.png";
 import Link from "next/link";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -43,9 +43,17 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="/pdf/mycv.xlsx" download="履歴書.xlsx"
+                >
+                  Resume-Excel
+                </a>
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="/pdf/mycv.pdf" download="履歴書.pdf"
                 >
-                  Resume
+                  Resume-PDF
                 </a>
               </li>
             </ul>
